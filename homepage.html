@@ -1,0 +1,113 @@
+
+</head>
+<body>
+
+    <div id="sidebar">
+        <button class="closebtn icon menu" onclick="closeNav()">&times;</button>
+        <h3 style="padding: 10px 20px; color: var(--muted);">Menu</h3>
+        <a href="javascript:void(0)" onclick="alert('Contact Information: support@comikverse.com')">Contacts</a>
+        <div class="menu-item" onclick="toggleDarkMode()">
+            Dark Mode <span id="mode-status" style="float: right; margin-right: 16px; font-weight: normal;">OFF</span>
+        </div>
+    </div>
+
+    <div class="card">
+
+        <header id="main-topbar" class="topbar">
+            <div class="logo">ComikVerse</div>
+            <div class="menu-icons">
+                <button class="icon menu" onclick="openNav()">☰</button>
+            </div>
+        </header>
+
+        <main>
+
+            <section id="home" class="section hero">
+                <div class="hero-inner">
+                    <div class="hero-text">
+                        <h1>Rise of Technology</h1>
+                        <p class="tagline">A futuristic isekai romance that explores the intersection of humanity and emergent tech — welcome to a world rebuilt by innovation.</p>
+                        <div class="home-buttons">
+                            <a class="btn" href="chapter 1.html">Read Chapter</a>
+                            <a class="btn secondary" href="#details-anchor">Synopsis & Details</a>
+                        </div>
+                    </div>
+
+                    <div class="hero-media">
+                        <img class="hero-image" src="logoweb.jpg" alt="Rise of Technology cover">
+                    </div>
+                </div>
+
+                <div id="details-anchor" class="details-content">
+                    <h2 class="section-title">Synopsis & Details</h2>
+                    <p><strong>Title:</strong> Rise of Technology</p>
+                    <p><strong>Genre:</strong> Isekai, Romance, Fantasy</p>
+                    <p><strong>Author(s):</strong> [Author Name]</p>
+                    <hr>
+                    <h3>Synopsis</h3>
+                    <p>This is where the detailed summary or synopsis of the comic/manga goes. The entire page is vertically scrollable, allowing readers to view the details, and then move on to the chapters below.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    <div style="text-align:left;margin-top:16px">
+                        <a class="btn" href="chapter 1.html">Start Reading</a>
+                    </div>
+                </div>
+            </section>
+
+            <section class="image-gallery-section">
+                <h2>Featured Art</h2>
+                <div class="image-gallery" aria-label="Featured artwork gallery">
+                    <img class="gallery-image" src="signature.jpg" alt="Featured Image">
+                    <img class="gallery-image" src="591883075_4348021092189557_4748425820651080581_n.jpg" alt="Featured artwork 1">
+                    <img class="gallery-image" src="591717738_1451047846547595_5402957949175068342_n.jpg" alt="Featured artwork 2">
+                    <img class="gallery-image" src="591066865_2631251390556940_7931204592639230251_n.jpg" alt="Featured artwork 3">
+                    <img class="gallery-image" src="590171623_2041790643342700_5565815950535877890_n.jpg" alt="Featured artwork 4">
+                    <img class="gallery-image" src="589972484_1870191873622765_8870781525310721081_n.jpg" alt="Featured artwork 5">
+                    <img class="gallery-image" src="589740080_840073268817793_3950380824757622446_n.jpg" alt="Featured artwork 6">
+                </div>
+            </section>
+
+        </main>
+
+        <footer class="footer">© 2025 Comic Project | Designed for Vertical Reading</footer>
+
+    </div>
+
+    <script>
+        // Set a default width for the sidebar
+        const SIDEBAR_WIDTH = "250px";
+
+        /* Function to open the side menu */
+        function openNav() {
+            document.getElementById("sidebar").style.width = SIDEBAR_WIDTH;
+        }
+
+        /* Function to close the side menu */
+        function closeNav() {
+            document.getElementById("sidebar").style.width = "0";
+        }
+
+        /* Function to toggle Dark Mode */
+        function toggleDarkMode() {
+            const body = document.body;
+            const status = document.getElementById("mode-status");
+            
+            body.classList.toggle("dark-mode");
+
+            // Update status text in the menu
+            if (body.classList.contains("dark-mode")) {
+                status.textContent = "ON";
+            } else {
+                status.textContent = "OFF";
+            }
+        }
+    </script>
+
+</body>
+</html>
+            status.textContent = "OFF";
+        }
+    }
+</script>
+
+</body>
+</html>

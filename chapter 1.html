@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Rise of Technology - Chapter 1</title>
+        <main>
+            <section id="chapter1" class="section chapter chapter-reader">
+                <div class="chapter-hero">
+                    <h2 class="chapter-title">Chapter 1 — Where It All Started</h2>
+                    <p class="muted">Single-page chapter • Vertical reading</p>
+                </div>
+
+                <div class="comic-panel-container">
+                    <!-- Centered single chapter image -->
+                    <img class="comic-panel" src="intro.jpg" alt="Chapter 1 Image">
+                </div>
+
+                <div class="nav-row">
+                    <a class="btn secondary" href="homepage.html">&larr; Back</a>
+                    <a class="btn" href="homepage.html">End</a>
+                </div>
+            </section>
+        </main>
+
+        <main>
+            <section id="chapter1" class="section chapter chapter-reader">
+                
+                <header class="chapter-top">
+                </header>
+
+                <h2 class="chapter-title">Chapter 0: Where It All Started</h2>
+
+                <div class="comic-panel-container">
+                    <!-- This chapter contains a single image (single-page chapter) -->
+                    <img class="comic-panel" src="589972484_1870191873622765_8870781525310721081_n.jpg" alt="Chapter 1 Image">
+                    <img class="comic-panel" src="591066865_2631251390556940_7931204592639230251_n.jpg" alt="Chapter 1 Image">
+                    <img class="comic-panel" src="590171623_2041790643342700_5565815950535877890_n.jpg" alt="Chapter 1 Image">
+                    <img class="comic-panel" src="589740080_840073268817793_3950380824757622446_n.jpg" alt="Chapter 1 Image">
+                    <img class="comic-panel" src="591717738_1451047846547595_5402957949175068342_n.jpg" alt="Chapter 1 Image">
+                </div>
+            
+
+                <div class="nav-row">
+                    <a class="btn secondary" href="homepage.html">&larr; Details</a>
+                    <a class="btn" href="homepage.html">End</a>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            © 2025 Comic Project | Designed for Vertical Reading
+        </footer>
+
+    </div>
+
+<script>
+    // Set a default width for the sidebar
+    const SIDEBAR_WIDTH = "250px";
+
+    /* Function to open the side menu */
+    function openNav() {
+        document.getElementById("sidebar").style.width = SIDEBAR_WIDTH;
+    }
+
+    /* Function to close the side menu */
+    function closeNav() {
+        document.getElementById("sidebar").style.width = "0";
+    }
+
+    /* Function to toggle Dark Mode */
+    function toggleDarkMode() {
+        const body = document.body;
+        const status = document.getElementById("mode-status");
+        
+        body.classList.toggle("dark-mode");
+
+        // Update status text in the menu
+        if (body.classList.contains("dark-mode")) {
+            status.textContent = "ON";
+        } else {
+            status.textContent = "OFF";
+        }
+    }
+</script>
+
+</body>
+</html>
